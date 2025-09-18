@@ -1,0 +1,12 @@
+{
+    "name": "benepik/fpdf",
+    "autoload": {
+        "psr-4": {
+            "Benepik\\Fpdf\\": "app/"
+        }
+    },
+    "require": {
+"setasign/fpdf": "^1.8",
+        "tecnickcom/tcpdf": "^6.10" 
+    }
+}

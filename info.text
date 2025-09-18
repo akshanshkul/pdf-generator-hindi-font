@@ -1,0 +1,23 @@
+# Documentation
+
+This file documents the process of generating and adding a custom font (Noto Serif Devanagari) for use with the TCPDF library in PHP.
+
+## Steps
+
+1. **Generate TCPDF Font Files**
+    - Run the `tcpdf_addfont.php` tool provided by TCPDF to convert the TTF font file into a format usable by TCPDF.
+    - Example command:
+      ```
+      php vendor/tecnickcom/tcpdf/tools/tcpdf_addfont.php -i noto-serif-devanagari/NotoSerifDevanagari.ttf
+      ```
+
+2. **Command Output**
+    - The tool sets the output directory to `/var/www/html/fpdf/vendor/tecnickcom/tcpdf/fonts/`.
+    - The font is added with the internal name `notoserifdevanagari`.
+    - A success message confirms the process completion.
+
+## Notes
+
+- Ensure the font file (`NotoSerifDevanagari.ttf`) exists in the specified directory before running the command.
+- After successful execution, the font will be available for use in TCPDF-generated PDFs.
+
